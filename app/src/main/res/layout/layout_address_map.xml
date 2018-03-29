@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rel_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="My Address"
+            android:textColor="@color/green_type"
+            android:textSize="22dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_map"/>
+
+    <TextView
+        android:id="@+id/txt_map_address"
+        android:layout_above="@+id/txt_address_desc"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_no_address"
+        android:textColor="@color/green_type"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_marginBottom="100dp"
+        android:layout_above="@+id/btn_add_Address"
+        android:id="@+id/txt_address_desc"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_no_address_second"
+        android:textColor="@color/gray"
+        android:textSize="16dp"/>
+
+    <RelativeLayout
+        android:id="@+id/btn_add_Address"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_btn">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Add New Address"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_map_icon"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:id="@+id/img_loc_two"
+        android:layout_above="@+id/txt_map_address"
+        android:layout_toRightOf="@+id/img_loc_one"
+        android:layout_toEndOf="@+id/img_loc_one"
+        android:layout_marginBottom="72dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_map_icon"
+        android:layout_marginLeft="142dp"
+        android:layout_marginStart="142dp"
+        android:id="@+id/img_loc_one"
+        android:layout_above="@+id/img_loc_two"
+        android:layout_alignLeft="@+id/btn_add_Address"
+        android:layout_alignStart="@+id/btn_add_Address" />
+
+</RelativeLayout>

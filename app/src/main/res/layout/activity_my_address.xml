@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_address"
+    tools:context="com.multipz.onveggy.Address.MyAddressActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="My Address"
+            android:textColor="@color/green_type"
+            android:textSize="22dp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@+id/rel_header"
+        android:layout_above="@+id/btn_add_Address"
+        android:id="@+id/list_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="1dp"
+        android:layout_marginBottom="5dp"
+        android:footerDividersEnabled="false" />
+
+    <RelativeLayout
+        android:id="@+id/btn_add_Address"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_btn">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Add New Address"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/no_address"
+        android:visibility="gone"
+        layout="@layout/layout_address_map" />
+
+</RelativeLayout>

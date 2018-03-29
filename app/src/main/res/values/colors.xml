@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#185a9d</color>
+
+    <color name="color_pager">#43cea2</color>
+    <color name="light_color_pager">#4043cea2</color>
+
+    <color name="light_green">#5043cea2</color>
+
+    <color name="text_color">#4A7CAD</color>
+    <color name="light_gray">#565d61</color>
+    <color name="white">#ffffff</color>
+    <color name="light_white">#70ffffff</color>
+    <color name="gray">#95989A</color>
+    <color name="green">#43cea2</color>
+    <color name="sign_in_text">#2d929f</color>
+    <color name="header_text">#43cea2</color>
+    <color name="light_blue">#5037a270</color>
+    <color name="forgot_text">#185a9d</color>
+
+    <color name="green_type">#43cea2</color>
+    <color name="blue_type">#185a9d</color>
+    <color name="adress_line">#daf5ec</color>
+
+    <array name="array_dot_active">
+        <item>@color/color_pager</item>
+        <item>@color/color_pager</item>
+        <item>@color/color_pager</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/light_color_pager</item>
+        <item>@color/light_color_pager</item>
+        <item>@color/light_color_pager</item>
+    </array>
+
+    <color name="edit_txt_color">#2d929f</color>
+    <color name="edit_hint_color">#2d929f</color>
+
+
+    <color name="lite_gradient_start">#553c9781</color>
+    <color name="lite_gradient_end">#554b7dae</color>
+
+    <color name="dark_gradient_start">#3c9781</color>
+    <color name="dark_gradient_end">#4b7dae</color>
+</resources>

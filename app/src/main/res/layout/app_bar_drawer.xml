@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    tools:context="com.multipz.onveggy.Activity.DrawerActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_marginTop="10dp"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_menu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_menu"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/img_title"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:src="@drawable/img_app_name" />
+
+                <ImageView
+                    android:visibility="visible"
+                    android:id="@+id/img_search"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_search"
+                    android:layout_toLeftOf="@+id/rel_bag"
+                    android:layout_centerVertical="true"/>
+
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:id="@+id/rel_bag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:id="@+id/btn_bag"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/ic_bag" />
+
+                    <TextView
+                        android:id="@+id/item_count"
+                        android:layout_width="14dp"
+                        android:gravity="center"
+                        android:layout_height="14dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="0dp"
+                        android:layout_alignBottom="@+id/btn_bag"
+                        android:background="@drawable/small_circle"
+                        android:textColor="@color/white"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="10sp"
+                        android:text="0"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_drawer" />
+
+</android.support.design.widget.CoordinatorLayout>

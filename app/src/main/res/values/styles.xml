@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="cust_Button">
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:background">@drawable/bg_edt</item>
+        <item name="android:textColor">@color/edit_txt_color</item>
+        <item name="android:textColorHint">@color/edit_hint_color</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="cus_devider">
+        <item name="android:background">@color/light_white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginRight">60dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">60dp</item>
+    </style>
+
+
+    <style name="sign_in_cus_devider">
+        <item name="android:background">@color/lite_gradient_start</item>
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">0.9dp</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="social_divider">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

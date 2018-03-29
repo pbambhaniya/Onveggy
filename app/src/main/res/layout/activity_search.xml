@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_setting"
+    tools:context="com.multipz.onveggy.Activity.SearchActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back" />
+
+        <RelativeLayout
+            android:id="@+id/rel_search"
+            android:layout_toRightOf="@+id/img_back"
+            android:layout_toLeftOf="@+id/rel_cart"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_edt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_search"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"/>
+
+            <EditText
+                android:id="@+id/edit_search_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:paddingLeft="42dp"
+                android:hint="Search"
+                android:textColorHint="@color/edit_hint_color"
+                android:textColor="@color/edit_txt_color"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/rel_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="12dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/btn_bag"
+                android:layout_width="25dp"
+                android:layout_height="26dp"
+                android:background="@drawable/ic_bag" />
+
+            <TextView
+                android:id="@+id/item_count"
+                android:layout_width="14dp"
+                android:gravity="center"
+                android:layout_height="14dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="0dp"
+                android:layout_alignBottom="@+id/btn_bag"
+                android:background="@drawable/small_circle"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:text="1"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <GridView
+        android:layout_below="@+id/rel_header"
+        android:layout_marginTop="10dp"
+        android:numColumns="2"
+        android:gravity="center"
+        android:columnWidth="100dp"
+        android:stretchMode="columnWidth"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/grid_veg_item" />
+
+</RelativeLayout>

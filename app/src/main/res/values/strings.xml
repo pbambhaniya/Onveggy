@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">OnVeggy</string>
+    <string name="facebook_id">1271873349591175</string>
+
+    <string name="title_name">O N V E G G Y</string>
+    <string name="welcome_txt_signin">Sign in</string>
+    <string name="welcome_txt_signup">Sign up</string>
+
+    <string name="welcome1_txt">Now Getting <font color="#eb7989">Veggy</font> \n online is easy</string>
+    <string name="welcome2_txt">Now Getting <font color="#eb7989">Veggy</font> \n online is easy</string>
+    <string name="welcome3_txt">Now Getting <font color="#eb7989">Veggy</font> \n online is easy</string>
+
+    <string name="splash_txt">"Let\'s Go"</string>
+    <string name="splash_txt_name">"Let\'s buy <font color="#f27321">Veggy</font> \n With me"</string>
+    <string name="signin_text">Just One Step <font color="#60266c">Left</font> \n to your veggy</string>
+
+    <string name="forget_pwd_name">Forgot Password?</string>
+    <string name="create_ac_name">Create a account? Sign up</string>
+    <string name="signup_text">Give us some <font color="#e9c32d">Valuable</font> \n information</string>
+    <string name="signup_txt_two">Now to fill your <font color="#e12727">Login</font> \n information</string>
+    <string name="txt_already_name">Already have an account? Sign in</string>
+    <string name="email">Email</string>
+    <string name="title_activity_drawer_">Drawer_Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="txt_address">
+        Emma Stone\n
+        303 &amp; 304 Shaan Complex\,\n
+        Besides Sakar 2\,Opposite Town hall\n
+        Ahmedabad,Gujarat
+    </string>
+
+    <string name="txt_no_address">You Have No Saved Addresses</string>
+    <string name="txt_no_address_second">Tell us where you want your \n orders delivered</string>
+
+    <string name="oreder_des">Your order Number is<font color="#185a9d">  #Veggy708  </font>\n estimated  delivery  is  Monday  \n  may , afternoon  </string>
+    <string name="rate_us">Let us know what you feel about our service your. your Sharing is valuable for us.\n</string>
+    <string name="contact_us">"Please let us know  what issues you\'re facing and we\'ll get back to you soon"</string>
+
+    <string name="about_us">Let us know what you feel about our service your. your Sharing is valuable for us.Please let us know  what issues you.</string>
+
+     <!--Validation -->
+
+    <string name="valid_confirm_pwd">Passwords do not match. Please enter the passwords again.</string>
+    <string name="valid_name">Please enter your full name</string>
+    <string name="email_txt">Please enter your email address</string>
+    <string name="valid_email">Please enter a valid email address</string>
+    <string name="valid_password">Please select a password</string>
+    <string name="valid_confirm_password">Please select a confirm password</string>
+    <string name="mobile_txt">Please enter your mobile number</string>
+    <string name="valid_email_or_mobile">Enter Valid Email Id or Mobile Number</string>
+    <string name="valid_mobile_txt">Please enter a valid mobile number</string>
+    <string name="valid_connection">You seem to be offline, please connect to the internet for latest news and updates</string>
+    <string name="valid_officeno">Please enter your office number</string>
+    <string name="valid_officename">Please enter your office name</string>
+    <string name="valid_locality">Please enter your locality</string>
+
+
+</resources>

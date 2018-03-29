@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/txt_desc_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_sign_up"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#777777"
+        android:text="@string/signup_text"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_below="@+id/txt_pager"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <EditText
+            android:id="@+id/edit_email"
+            style="@style/cust_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_edt"
+            android:hint="Email Id  "
+            android:maxLines="1"
+            android:paddingLeft="25dp"
+            android:textColor="@color/edit_txt_color"
+            android:textColorHint="@color/edit_hint_color" />
+
+        <EditText
+            android:id="@+id/edit_contact"
+            style="@style/cust_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_username"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_edt"
+            android:hint="Contact number"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingLeft="25dp"
+            android:textColor="@color/edit_txt_color"
+            android:textColorHint="@color/edit_hint_color" />
+    </LinearLayout>
+</RelativeLayout>
